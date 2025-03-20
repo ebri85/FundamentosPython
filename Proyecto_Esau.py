@@ -1,22 +1,18 @@
-""" Menu Dinamico"""
-
+#Creacion de Archivos
 with open("canciones.txt","w") as canciones:
     canciones.write("")
-
-
 with open("juegos.txt","w") as juegos:
     juegos.write("")
-    
-
 with open("series.txt","w") as series_tv:
     series_tv.write("")
+
 
 def menu_principal():
     resultado = "=====Hola Bienvenido==== \n"
     resultado +="Desea agregar un Item ? \n"
-    resultado +="1. Lista de Series\n"
-    resultado +="2. Lista de Canciones \n"
-    resultado +="3. Lista de Juegos \n"
+    resultado +="1. Agregar de Series\n"
+    resultado +="2. Agregar de Canciones \n"
+    resultado +="3. Agregar de Juegos \n"
     resultado +="4. Salir \n"
    
     print(resultado)
@@ -52,5 +48,7 @@ def ejecutar():
             print("Adios!! \n Termina Programa")
             
             break
+        else:
+            print("Opcion no reconocida")
         
 ejecutar()

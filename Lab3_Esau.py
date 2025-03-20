@@ -26,6 +26,7 @@ def num_no_repetido():
                 cont += 1
         if cont == 1:
             return i
+    return "Todos estan repetidos"
  
  
 print("La posicion del primer numero no repetido es ",num_no_repetido())
@@ -33,3 +34,11 @@ print("La posicion del primer numero no repetido es ",num_no_repetido())
 
 """- Funcion, de una lista de palabras, generar una lista de cantidad de palabras respectivamente
 """
+def cantidad_letras(palabras):
+    resultado =  [len(palabra ) for palabra in palabras]
+    return resultado
+
+lista_palabras = ["hola", "as", "oka"]
+resultado = cantidad_letras(lista_palabras)
+
+print(resultado)
